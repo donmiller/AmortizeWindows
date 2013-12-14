@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Amortize.Resources;
+using System.Globalization;
 
 namespace Amortize
 {
@@ -24,18 +25,17 @@ namespace Amortize
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
         {
+
             long term = Convert.ToInt32(Term.Text);
             double numberOfPayments = term * 12;
-            double paymentTerm = 1 + term;
             double ratePerPeriod = Convert.ToDouble(InterestRate.Text) / 12 / 100;
-
+            double amount = Convert.ToDouble(Amount.Text) - Convert.ToDouble(DownPayment.Text);
             double q = Math.Pow(1 + ratePerPeriod, numberOfPayments);
             double futureValue = 0;
             double type = 0;
-            double 
-
-            PaymentAmount = (term * (futureValue + (q * Convert.ToInt32(Amount.Text)))) / ((-1 + q) * (paymentTerm * (type)));
-
+            double paymentAmount = (ratePerPeriod * (futureValue + (q * amount))) / ((-1 + q) * (1 + ratePerPeriod * (type)));
+            // (ratePerPeriod * (futureValue + (q * loanAmount))) / ((-1 + q) * (1 + ratePerPeriod * (type)));
+            PaymentAmount.Text = String.Format(CultureInfo.InvariantCulture, "${0:0.00}", paymentAmount);
         }
 
         // Sample code for building a localized ApplicationBar
