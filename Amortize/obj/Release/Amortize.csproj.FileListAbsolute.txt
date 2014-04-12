@@ -16,3 +16,4 @@ C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\Amortize.cspro
 C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\Amortize.dll
 C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\Amortize.pdb
 C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\XapCacheFile.xml
+C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\Properties\WMAppManifest.xml
