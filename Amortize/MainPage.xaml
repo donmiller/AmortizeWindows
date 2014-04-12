@@ -47,18 +47,19 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Left" Margin="10,24,0,0" TextWrapping="NoWrap" Text="Amount" VerticalAlignment="Top" FontSize="36"/>
-            <TextBox x:Name="Amount" HorizontalAlignment="Right" Height="72" Margin="172,17,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200"/>
+            <TextBlock HorizontalAlignment="Left" Margin="11,31,0,0" TextWrapping="NoWrap" Text="Amount" VerticalAlignment="Top" FontSize="36"/>
+            <TextBox x:Name="Amount" HorizontalAlignment="Right" Height="72" Margin="0,24,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200" GotFocus="Amount_GotFocus"/>
 
             <TextBlock HorizontalAlignment="Left" Margin="11,101,0,0" TextWrapping="NoWrap" Text="Down Payment" VerticalAlignment="Top" FontSize="36"/>
-            <TextBox x:Name="DownPayment" HorizontalAlignment="Right" Height="72" Margin="0,94,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200"/>
+            <TextBox x:Name="DownPayment" HorizontalAlignment="Right" Height="72" Margin="0,94,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200" GotFocus="DownPayment_GotFocus"/>
 
             <TextBlock HorizontalAlignment="Left" Margin="16,173,0,0" TextWrapping="NoWrap" Text="Interest Rate" VerticalAlignment="Top" FontSize="36"/>
-            <TextBox x:Name="InterestRate" HorizontalAlignment="Right" Height="72" Margin="0,166,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200"/>
+            <TextBox x:Name="InterestRate" HorizontalAlignment="Right" Height="72" Margin="0,166,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="200" GotFocus="InterestRate_GotFocus"/>
 
             <TextBlock HorizontalAlignment="Left" Margin="16,245,0,0" TextWrapping="NoWrap" Text="Term" VerticalAlignment="Top" FontSize="36"/>
-            <TextBox x:Name="Term" HorizontalAlignment="Right" Height="72" Margin="0,238,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0" VerticalAlignment="Top" Width="200"/>
-            <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="0,315,0,0" VerticalAlignment="Top" Width="456" Click="Calculate_Click"/>
+            <TextBox x:Name="Term" HorizontalAlignment="Right" Height="72" Margin="0,238,0,0" TextWrapping="NoWrap" TextAlignment="Right" Text="0" VerticalAlignment="Top" Width="200" GotFocus="Term_GotFocus"/>
+            <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="0,423,0,0" VerticalAlignment="Top" Width="456" Click="Calculate_Click"/>
+            <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="0,351,0,0" VerticalAlignment="Top" Width="456" Click="Clear_Click"/>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

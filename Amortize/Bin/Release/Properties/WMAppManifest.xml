@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{0395a56c-c864-4198-8fca-3bbc01ded158}" Title="Amortize" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Amortize author" Description="Sample description" Publisher="Amortize" PublisherID="{ab0be74d-438e-4343-88ae-b480f31ec1ad}">
+  <App xmlns="" ProductID="{0395a56c-c864-4198-8fca-3bbc01ded158}" Title="Amortize" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="Don Miller" Description="Sample description" Publisher="Amortize" PublisherID="{ab0be74d-438e-4343-88ae-b480f31ec1ad}">
     <IconPath IsRelative="true" IsResource="false">PayCalc1024.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

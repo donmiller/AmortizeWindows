@@ -14,6 +14,10 @@ namespace Amortize
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        bool _AmountCalled = false;
+        bool _InterestRate = false;
+        bool _DownPayment = false;
+        bool _Term = false;
         // Constructor
         public MainPage()
         {
@@ -36,6 +40,55 @@ namespace Amortize
             double paymentAmount = (ratePerPeriod * (futureValue + (q * amount))) / ((-1 + q) * (1 + ratePerPeriod * (type)));
             // (ratePerPeriod * (futureValue + (q * loanAmount))) / ((-1 + q) * (1 + ratePerPeriod * (type)));
             PaymentAmount.Text = String.Format(CultureInfo.InvariantCulture, "${0:0.00}", paymentAmount);
+        }
+
+        private void Amount_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (!_AmountCalled)
+            {
+                Amount.Text = "";
+                _AmountCalled = true;
+            }
+        }
+
+        private void DownPayment_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (!_DownPayment)
+            {
+                DownPayment.Text = "";
+                _DownPayment = true;
+            }
+        }
+
+        private void InterestRate_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (!_InterestRate)
+            {
+                InterestRate.Text = "";
+                _InterestRate = true;
+            }
+        }
+
+        private void Term_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (!_Term)
+            {
+                Term.Text = "";
+                _Term = true;
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Amount.Text = "0.00";
+            _AmountCalled = false;
+            DownPayment.Text = "0.00";
+            _DownPayment = false;
+            InterestRate.Text = "0.00";
+            _InterestRate = false;
+            Term.Text = "0";
+            _Term = false;
+            PaymentAmount.Text = "Payment";
         }
 
         // Sample code for building a localized ApplicationBar

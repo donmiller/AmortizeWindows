@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\Amortize_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/12/2014 10:41:51 AM">
-  <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\Amortize.dll" archivePath="Amortize.dll" lastWriteTime="4/12/2014 10:41:51 AM" />
+﻿<xapCache source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\Amortize_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/12/2014 2:40:12 PM">
+  <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\obj\Release\Amortize.dll" archivePath="Amortize.dll" lastWriteTime="4/12/2014 2:40:11 PM" />
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="12/14/2013 1:40:05 PM" />
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="12/14/2013 1:40:05 PM" />
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="12/14/2013 1:40:05 PM" />
@@ -11,5 +11,5 @@
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\PayCalc80.png" archivePath="PayCalc80.png" lastWriteTime="11/13/2013 10:12:43 PM" />
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/14/2013 3:03:11 PM" />
   <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\PayCalc1024.png" archivePath="PayCalc1024.png" lastWriteTime="11/13/2013 10:49:19 PM" />
-  <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/12/2014 10:30:24 AM" />
+  <file source="C:\Users\Don\Documents\GitHub\PayCalcWindows\Amortize\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/12/2014 2:40:12 PM" />
 </xapCache>
