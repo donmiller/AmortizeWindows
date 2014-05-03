@@ -23,8 +23,28 @@ namespace Amortize
         {
             InitializeComponent();
 
+            ShellTile PinnedTile = ShellTile.ActiveTiles.First();
+            ShellTileData tileData = this.CreateFlipTileData();
+            PinnedTile.Update(tileData);
+
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+        private ShellTileData CreateFlipTileData()
+        {
+            return new FlipTileData()
+            {
+                Title = "Amortize",
+                BackTitle = "Amortize",
+                BackContent = "Payment",
+                WideBackContent = "Find Your Payment",
+                SmallBackgroundImage = new Uri("/Assets/Tiles/FlipCycleTileSmall.png", UriKind.Relative),
+                BackgroundImage = new Uri("/Assets/Tiles/FlipCycleTileMedium.png", UriKind.Relative),
+                BackBackgroundImage = new Uri("/Assets/Tiles/BackFlipCycleTileMedium.png", UriKind.Relative),
+                WideBackgroundImage = new Uri("/Assets/Tiles/FlipCycleTileLarge.png", UriKind.Relative),
+                WideBackBackgroundImage = new Uri("/Assets/Tiles/BackFlipCycleTileLarge.png", UriKind.Relative)
+            };
         }
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
